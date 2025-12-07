@@ -80,11 +80,24 @@
             transform: scale(1.05);
         }
 
+        /* Contenedor de las tarjetas */
         .frame-container {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 40px;          /* separación entre imágenes */
+            flex-wrap: wrap;    /* por si agregas más */
             margin-top: 20px;
         }
 
+        .story-box {
+            text-align: center;
+        }
+
+        .story-title {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 1.05rem;
+        }
     </style>
 </head>
 <body>
@@ -104,27 +117,37 @@
     <h2>🐢💨 Vista previa del nuevo marco</h2>
 
     <div class="frame-container">
-    
-    <!-- 📘 Comic -->
-    <a href="/bici/" target="_blank">
-        <img src="/img/rana_fumona.jpeg" class="comic-frame">
-    </a>
+        <!-- Abasticos -->
+        <div class="story-box">
+            <a href="/bici/" target="_blank">
+                <img src="/img/rana_fumona.jpeg" class="comic-frame">
+            </a>
+            <div class="story-title">Abasticos – 06/12</div>
+        </div>
 
-    <!-- 🍃 Aesthetic ondulado -->
-    <a href="/bici/" target="_blank">
-        <img src="/img/Romeral3011.jpeg" class="comic-frame">
-    </a>
+        <!-- Romeral -->
+        <div class="story-box">
+            <a href="/bici/" target="_blank">
+                <img src="/img/Romeral3011.jpeg" class="comic-frame">
+            </a>
+            <div class="story-title">Domingo de Romeral – 30/11</div>
+        </div>
 
-    <!-- 📜 Vintage pergamino -->
-    <a href="/bici/" target="_blank">
-        <img src="/img/Mesitas0911.jpeg" class="comic-frame">
-    </a>
+        <!-- Mesitas -->
+        <div class="story-box">
+            <a href="/bici/" target="_blank">
+                <img src="/img/Mesitas0911.jpeg" class="comic-frame">
+            </a>
+            <div class="story-title">Mesitas – 09/11</div>
+        </div>
 
-    <!-- 📜 Vintage pergamino -->
-    <a href="/bici/" target="_blank">
-        <img src="/img/Vals0311.jpeg" class="comic-frame">
-    </a>
-
+        <!-- Vals -->
+        <div class="story-box">
+            <a href="/bici/" target="_blank">
+                <img src="/img/Vals0311.jpeg" class="comic-frame">
+            </a>
+            <div class="story-title">Vals – 03/11</div>
+        </div>
     </div>
 
 </div>
